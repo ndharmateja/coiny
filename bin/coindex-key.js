@@ -1,11 +1,12 @@
 import { Command } from "commander";
 import { key } from "../handlers/key-handler.js";
+import { API_URL } from "../utils/constants.js";
 
 const program = new Command();
 
 program
   .command("set")
-  .description("Set API Key -> Get at https://www.coinapi.io")
+  .description(`Set API Key -> Get at ${API_URL}`)
   .action(key.set);
 
 program.command("show").description("Show API Key").action(key.show);

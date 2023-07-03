@@ -3,6 +3,7 @@
 // Imports
 import { Command } from "commander";
 import { createRequire } from "module";
+import { API_URL } from "../utils/constants.js";
 const require = createRequire(import.meta.url);
 const pkg = require("../package.json");
 
@@ -10,5 +11,5 @@ const program = new Command();
 
 program
   .version(pkg.version)
-  .command("key", "Manage API key -> Get at https://www.coinapi.io")
+  .command("key", `Manage API key -> Get at ${API_URL}`)
   .parse(process.argv);

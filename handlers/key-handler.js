@@ -2,6 +2,7 @@ import { KeyManager } from "../lib/KeyManager.js";
 import inquirer from "inquirer";
 import colors from "colors";
 import { isRequired } from "../utils/validation.js";
+import { API_URL } from "../utils/constants.js";
 const keyManager = new KeyManager();
 
 async function takeKeyInput() {
@@ -9,7 +10,7 @@ async function takeKeyInput() {
     {
       type: "input",
       name: "key",
-      message: "(https://www.coinapi.io) ".yellow + "Enter API Key:".green,
+      message: `(${API_URL}) `.yellow + "Enter API Key:".green,
       validate: isRequired,
     },
   ]);
