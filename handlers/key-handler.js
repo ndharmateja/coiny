@@ -41,7 +41,7 @@ export const key = {
     try {
       // Try to remove the key
       keyManager.deleteKey();
-      console.log("Successfully remove the key.".green);
+      console.log("Successfully removed the key.".green);
     } catch (error) {
       // If error show error message
       console.log(error.message.red);
