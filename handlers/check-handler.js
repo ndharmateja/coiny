@@ -25,7 +25,7 @@ export const check = {
     } catch (error) {
       console.log(
         "API Key not set. Set API Key using ".red +
-          "coindex key set".yellow +
+          "coiny key set".yellow +
           " and then check prices.".red
       );
       return;

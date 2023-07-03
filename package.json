@@ -1,10 +1,10 @@
 {
   "type": "module",
-  "name": "coindex",
+  "name": "coiny",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": "./bin/coindex.js",
+  "bin": "./bin/coiny.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
