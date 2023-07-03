@@ -12,4 +12,5 @@ const program = new Command();
 program
   .version(pkg.version)
   .command("key", `Manage API key -> Get at ${API_URL}`)
+  .command("check", "Check cryptocurrency coins prices")
   .parse(process.argv);
