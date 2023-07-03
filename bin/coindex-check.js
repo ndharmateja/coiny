@@ -6,6 +6,12 @@ const program = new Command();
 program
   .command("price")
   .description("Check price of coins")
-  .action(check.price);
+  .option(
+    "--coin <type>",
+    "Add specific coin types (comma separated)",
+    "BTC,ETH,DOGE"
+  )
+  .option("--curr <currency>", "Change the currency", "USD")
+  .action((cmd) => check.price(cmd));
 
 program.parse(process.argv);
