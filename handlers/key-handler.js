@@ -1,6 +1,7 @@
 import { KeyManager } from "../lib/KeyManager.js";
 import inquirer from "inquirer";
 import colors from "colors";
+import { isRequired } from "../utils/validation.js";
 const keyManager = new KeyManager();
 
 async function takeKeyInput() {
@@ -9,20 +10,9 @@ async function takeKeyInput() {
       type: "input",
       name: "key",
       message: "(https://www.coinapi.io) ".yellow + "Enter API Key:".green,
+      validate: isRequired,
     },
   ]);
-
-  // While key is empty, show error message and take input again
-  do {
-    console.log("Key cannot be empty.".red);
-    input = await inquirer.prompt([
-      {
-        type: "input",
-        name: "key",
-        message: "(https://www.coinapi.io) ".yellow + "Enter API Key:".green,
-      },
-    ]);
-  } while (!input.key.trim());
 
   // Return the input
   return input.key.trim();
