@@ -23,7 +23,7 @@
 
 ## Usage
 
-1. coiny
+1. **coiny**
 
    ```
    Usage: coiny [options] [command]
@@ -38,7 +38,7 @@
     help [command]  display help for command
    ```
 
-2. coiny key
+2. **coiny key**
 
    ```
    Usage: coiny-key [options] [command]
@@ -53,7 +53,7 @@
     help [command]  display help for command
    ```
 
-3. coiny check
+3. **coiny check**
 
    ```
    Usage: coiny-check [options] [command]
@@ -65,7 +65,7 @@
     help [command] display help for command
    ```
 
-4. coiny check price
+4. **coiny check price**
 
    ```
    Usage: coiny-check price [options]
