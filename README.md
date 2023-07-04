@@ -73,7 +73,7 @@
    Check price of coins
 
    Options:
-    --coin <type> Add specific coin types (comma separated) (default: "BTC,ETH,DOGE")
+    --coin <type> Specific coin types comma separated (default: "BTC,ETH,BNB,DOGE,USDT")
     --curr <currency> Change the currency (default: "USD")
     -h, --help display help for command
    ```
