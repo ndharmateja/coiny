@@ -1,6 +1,7 @@
 import { KeyManager } from "../lib/KeyManager.js";
 import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
+import { validateCurrency } from "../utils/validation.js";
 
 const getOutputString = (coinDataList) => {
   let output = "Prices List:\n";
@@ -29,11 +30,20 @@ export const check = {
       return;
     }
 
+    // If not valid currency
+    let curr;
+    try {
+      curr = validateCurrency(cmd.curr);
+    } catch (error) {
+      console.log(error.message.red);
+      return;
+    }
+
     try {
       const api = new CryptoApi(key);
 
       // CoinData[]
-      const coinDataList = await api.getPriceData(cmd.coin, cmd.curr);
+      const coinDataList = await api.getPriceData(cmd.coin, curr);
       const output = getOutputString(coinDataList);
 
       // Print output to console without new line
