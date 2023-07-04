@@ -8,7 +8,7 @@ program
   .description("Check price of coins")
   .option(
     "--coin <type>",
-    "Add specific coin types (comma separated)",
+    "Specific coin types comma separated",
     "BTC,ETH,BNB,DOGE,USDT"
   )
   .option("--curr <currency>", "Change the currency", "USD")
