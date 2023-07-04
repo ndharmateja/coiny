@@ -16,8 +16,8 @@
 
 ### Check prices
 
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81q8-Y94B4ounEeMYrbdGNs9_Eu9Gjz57CbiWJGBTkGGcomxtc0m_IGJVuo5MDVZkYMgUlaeXLVzusgQg7GwOb7UKfeSdA=s2560" width="47%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81qhrooRu2cf6TBuPsFo7c2barx7fujTKnnYDyxJwUV8ri3qguDe4H_UAqpabOgvvixRmUH_5qnO6-TdsztiYjTBUNgpPg=s2560" width="53%">
+- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81oUwGWwCCcPfbGKMe44ko4wmu22fTC17OELCK0rxcFRfIinInF50SoyVPn1VXtVyuyVwjxn3PYNUWF_5BIiriY8STJT=s2560" width="47%">
+- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81og6YmLycKiM3_R9WSG2KnLm8YhpVr8uskDU-qgSnKvKr6kuZDDCk3okvt_WK-EDDGhS2SpudO9REdCJ3LQweZBNmCCOw=s1600" width="59%">
 - <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81p5YBWRIQmmxC42loCLTBGoRZKiKYWAOJmhYBl5k_1s3HQerGHGdqYBeBBhxZHvdg0S5kMabDioAI1yrFrytYgqSn9y=s1600" width="75%">
 - <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81p1jEIXoyXzHO6PIEsp-NOUI84cXke3YIzolZ1WF1T4WlF8ebNtdxbfpbNJccB9lKbb-gEe69c8kbwyZB-0HQdJ3T12OA=s1600" width="100%">
 
