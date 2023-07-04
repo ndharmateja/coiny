@@ -2,17 +2,7 @@ import { KeyManager } from "../lib/KeyManager.js";
 import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
 import { validateCurrency } from "../utils/validation.js";
-
-const getOutputString = (coinDataList) => {
-  let output = "Prices List:\n";
-  for (const coinData of coinDataList) {
-    output += `Coin: `;
-    output += `${coinData.coinCode}`.yellow;
-    output += ` | Price: `;
-    output += `${coinData.coinPrice}\n`.green;
-  }
-  return output;
-};
+import { getOutputString } from "../utils/output-generator.js";
 
 export const check = {
   price: async (cmd) => {
