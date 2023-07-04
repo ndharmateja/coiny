@@ -64,6 +64,10 @@
    ```
 
 ## Examples
+### Key management
+- <img src="./examples/5.jpg" width="100%">
+- <img src="./examples/6.jpg" width="40%">
+- <img src="./examples/7.jpg" width="30%">
 
 ### Check prices
 
