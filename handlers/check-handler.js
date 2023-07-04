@@ -3,7 +3,7 @@ import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
 
 const getOutputString = (displayData, curr) => {
-  let output = "";
+  let output = "Prices List:\n";
   for (const coin in displayData) {
     const data = displayData[coin][curr.toUpperCase()];
     const { PRICE: price } = data;
