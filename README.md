@@ -6,6 +6,21 @@
 - It uses the Crypto Compare API. Users should first get an API Key (free) from [here](https://www.cryptocompare.com/cryptopian/api-keys) and set the key using the CLI.
 - Requires Node 20 or above.
 
+## Examples
+
+### Key management
+
+- <img src="./examples/5.jpg" width="100%">
+- <img src="./examples/6.jpg" width="40%">
+- <img src="./examples/7.jpg" width="30%">
+
+### Check prices
+
+- <img src="./examples/1.jpg" width="47%">
+- <img src="./examples/2.jpg" width="53%">
+- <img src="./examples/3.jpg" width="75%">
+- <img src="./examples/4.jpg" width="100%">
+
 ## Usage
 
 1. coiny
@@ -62,16 +77,3 @@
     --curr <currency> Change the currency (default: "USD")
     -h, --help display help for command
    ```
-
-## Examples
-### Key management
-- <img src="./examples/5.jpg" width="100%">
-- <img src="./examples/6.jpg" width="40%">
-- <img src="./examples/7.jpg" width="30%">
-
-### Check prices
-
-- <img src="./examples/1.jpg" width="47%">
-- <img src="./examples/2.jpg" width="53%">
-- <img src="./examples/3.jpg" width="75%">
-- <img src="./examples/4.jpg" width="100%">
