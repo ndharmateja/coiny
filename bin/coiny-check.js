@@ -9,7 +9,7 @@ program
   .option(
     "--coin <type>",
     "Add specific coin types (comma separated)",
-    "BTC,ETH,DOGE"
+    "BTC,ETH,XRP"
   )
   .option("--curr <currency>", "Change the currency", "USD")
   .action((cmd) => check.price(cmd));
