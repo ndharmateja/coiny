@@ -1,1 +1,1 @@
-# cryptocurrencies_cli
+# coiny
