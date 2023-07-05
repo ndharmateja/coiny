@@ -1,6 +1,6 @@
 export const GET_KEY_URL = "https://www.cryptocompare.com/cryptopian/api-keys";
 export const API_BASE_URL =
-  "https://min-api.cryptocompare.com/data/pricemultifull";
+  "https://min-api.cryptocompare.com/data";
 export const DEFAULT_COINS = "BTC,ETH,BNB,DOGE,ADA";
 export const CURRENCY_CODE_TO_NAME = {
   AED: "د.إ",
