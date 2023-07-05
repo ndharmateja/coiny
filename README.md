@@ -8,18 +8,86 @@
 
 ## Examples
 
-### Key management
-
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81pAaiZ_ZNuYt2QwVIemiGVPoyUpE7uglRiUxNqy1-_3D5GACzFlVFqVSUMkGBtJcZatRzWyQFRr5i3u9SYvxwI6wm3b=s1600" width="100%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81pIx8pYZ35gr26xpTLO2oGAQ9dpzAHVWUddb8rkjM8J2VPsmFww1kHoxVpt4mQ7pW97glD5G2lm-0lOFORuDGh_aLHzTg=s1600" width="60%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81ouroUmmuIqoHaeq9ysuz-DMb0qKafV7AIR04se_0OHOb8wuGH4UzTele8G3LmFmLuNKa7FarA1oUE_o7JGZbaWvCKn=s2560" width="47%">
-
 ### Check prices
 
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81oUwGWwCCcPfbGKMe44ko4wmu22fTC17OELCK0rxcFRfIinInF50SoyVPn1VXtVyuyVwjxn3PYNUWF_5BIiriY8STJT=s2560" width="47%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81og6YmLycKiM3_R9WSG2KnLm8YhpVr8uskDU-qgSnKvKr6kuZDDCk3okvt_WK-EDDGhS2SpudO9REdCJ3LQweZBNmCCOw=s1600" width="59%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81p5YBWRIQmmxC42loCLTBGoRZKiKYWAOJmhYBl5k_1s3HQerGHGdqYBeBBhxZHvdg0S5kMabDioAI1yrFrytYgqSn9y=s1600" width="75%">
-- <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81p1jEIXoyXzHO6PIEsp-NOUI84cXke3YIzolZ1WF1T4WlF8ebNtdxbfpbNJccB9lKbb-gEe69c8kbwyZB-0HQdJ3T12OA=s1600" width="100%">
+```
+$ coiny check price
+
+*----*------*------------*
+| #  | Coin | Price      |
+*----*------*------------*
+| 1. | BTC  | $ 30,814.3 |
+| 2. | ETH  | $ 1,938.66 |
+| 3. | BNB  | $ 243.00   |
+| 4. | DOGE | $ 0.06906  |
+| 5. | ADA  | $ 0.2933   |
+*----*------*------------*
+```
+
+```
+$ coiny check price --curr=EUR
+
+*----*------*------------*
+| #  | Coin | Price      |
+*----*------*------------*
+| 1. | BTC  | € 28,325.9 |
+| 2. | ETH  | € 1,782.11 |
+| 3. | BNB  | € 223.12   |
+| 4. | DOGE | € 0.06339  |
+| 5. | ADA  | € 0.2689   |
+*----*------*------------*
+```
+
+```
+$ coiny check price --coin=BTC,XRP --curr=INR
+
+*----*------*---------------*
+| #  | Coin | Price         |
+*----*------*---------------*
+| 1. | BTC  | ₹ 2,157,711.9 |
+| 2. | XRP  | ₹ 34.19       |
+*----*------*---------------*
+```
+
+```
+$ coiny check price --curr=EUR --coin=BTC,ETH,BTCM,BTCL,POLC,DOGE,USDT,ADA,BNB
+
+*----*------*-------------*
+| #  | Coin | Price       |
+*----*------*-------------*
+| 1. | BTC  | € 28,310.7  |
+| 2. | ETH  | € 1,781.38  |
+| 3. | BTCM | € 0.03561   |
+| 4. | BTCL | € 0.0005662 |
+| 5. | POLC | € 0.01047   |
+| 6. | DOGE | € 0.06325   |
+| 7. | USDT | € 0.9180    |
+| 8. | ADA  | € 0.2689    |
+| 9. | BNB  | € 223.06    |
+*----*------*-------------*
+```
+
+### Key management
+
+```
+$ coiny key set
+
+? (https://www.cryptocompare.com/cryptopian/api-keys)
+Enter API Key: a5fa608621d26a886503d1de41cd91410142
+Successfully set the key.
+```
+
+```
+$ coiny key show
+
+API Key: a5fa608621d26a886503d1de41cd91410142
+```
+
+```
+$ coiny key remove
+
+Successfully removed the key.
+```
 
 ## Usage
 
