@@ -2,7 +2,7 @@ import { KeyManager } from "../lib/KeyManager.js";
 import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
 import { validateCurrency } from "../utils/validation.js";
-import { getOutputString } from "../utils/output-generator.js";
+import { printCoinDataList } from "../utils/output-generator.js";
 
 export const check = {
   price: async (cmd) => {
@@ -34,10 +34,7 @@ export const check = {
 
       // CoinData[]
       const coinDataList = await api.getPriceData(cmd.coin, curr);
-      const output = getOutputString(coinDataList);
-
-      // Print output to console without new line
-      process.stdout.write(output);
+      printCoinDataList(coinDataList);
     } catch (error) {
       console.log(error.message.red);
       return;
