@@ -10,6 +10,9 @@
 
 ### Check prices
 
+- Default coins: BTC, ETH, BNB, DOGE, ADA
+- Default currency: USD
+
 ```
 $ coiny check price
 
