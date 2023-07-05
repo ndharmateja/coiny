@@ -14,7 +14,7 @@
 $ coiny check price
 
 *----*------*------------*
-| #  | Coin | Price      |
+| #  | Coin |   Price    |
 *----*------*------------*
 | 1. | BTC  | $ 30,814.3 |
 | 2. | ETH  | $ 1,938.66 |
@@ -28,7 +28,7 @@ $ coiny check price
 $ coiny check price --curr=EUR
 
 *----*------*------------*
-| #  | Coin | Price      |
+| #  | Coin |   Price    |
 *----*------*------------*
 | 1. | BTC  | € 28,325.9 |
 | 2. | ETH  | € 1,782.11 |
@@ -42,7 +42,7 @@ $ coiny check price --curr=EUR
 $ coiny check price --coin=BTC,XRP --curr=INR
 
 *----*------*---------------*
-| #  | Coin | Price         |
+| #  | Coin |     Price     |
 *----*------*---------------*
 | 1. | BTC  | ₹ 2,157,711.9 |
 | 2. | XRP  | ₹ 34.19       |
@@ -53,7 +53,7 @@ $ coiny check price --coin=BTC,XRP --curr=INR
 $ coiny check price --curr=EUR --coin=BTC,ETH,BTCM,BTCL,POLC,DOGE,USDT,ADA,BNB
 
 *----*------*-------------*
-| #  | Coin | Price       |
+| #  | Coin |    Price    |
 *----*------*-------------*
 | 1. | BTC  | € 28,310.7  |
 | 2. | ETH  | € 1,781.38  |
