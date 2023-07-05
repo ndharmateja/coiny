@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "coiny",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "",
   "main": "index.js",
   "bin": "./bin/coiny.js",
