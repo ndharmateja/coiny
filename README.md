@@ -13,7 +13,7 @@
 - Default coins: BTC, ETH, BNB, DOGE, ADA
 - Default currency: USD
 
-```c
+```
 $ coiny check price
 
 *----*------*------------*
@@ -27,7 +27,7 @@ $ coiny check price
 *----*------*------------*
 ```
 
-```c
+```
 $ coiny check price --coin=BTC,POLC,DOGE,ETH
 
 *----*------*------------*
@@ -40,7 +40,7 @@ $ coiny check price --coin=BTC,POLC,DOGE,ETH
 *----*------*------------*
 ```
 
-```c
+```
 $ coiny check price --curr=EUR
 
 *----*------*------------*
@@ -54,7 +54,7 @@ $ coiny check price --curr=EUR
 *----*------*------------*
 ```
 
-```c
+```
 $ coiny check price --coin=BTC,XRP --curr=INR
 
 *----*------*---------------*
@@ -65,7 +65,7 @@ $ coiny check price --coin=BTC,XRP --curr=INR
 *----*------*---------------*
 ```
 
-```c
+```
 $ coiny check price --curr=EUR --coin=BTC,ETH,BTCM,BTCL,POLC,DOGE,USDT,ADA,BNB
 
 *----*------*-------------*
@@ -85,7 +85,7 @@ $ coiny check price --curr=EUR --coin=BTC,ETH,BTCM,BTCL,POLC,DOGE,USDT,ADA,BNB
 
 ### Key management
 
-```c
+```
 $ coiny key set
 
 ? (https://www.cryptocompare.com/cryptopian/api-keys)
@@ -93,13 +93,13 @@ Enter API Key: a5fa608621d26a886503d1de41cd91410142
 Successfully set the key.
 ```
 
-```c
+```
 $ coiny key show
 
 API Key: a5fa608621d26a886503d1de41cd91410142
 ```
 
-```c
+```
 $ coiny key remove
 
 Successfully removed the key.
