@@ -8,8 +8,7 @@ program
   .description("Check price of coins")
   .option(
     "--coin <type>",
-    "Specific coin types comma separated",
-    "BTC,ETH,BNB,DOGE,ADA"
+    'Specific coin types comma separated (default: "BTC,ETH,BNB,DOGE,ADA")'
   )
   .option("--curr <currency>", "Change the currency", "USD")
   .action((cmd) => check.price(cmd));

@@ -3,10 +3,15 @@ import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
 import { validateCurrency } from "../utils/validation.js";
 import { printCoinDataList } from "../utils/output-generator.js";
+import { DEFAULT_COINS } from "../utils/constants.js";
 
 export const check = {
   price: async (cmd) => {
     const keyManager = new KeyManager();
+
+    if (!cmd.coin) {
+      cmd.coin = DEFAULT_COINS;
+    }
 
     let key;
     try {
