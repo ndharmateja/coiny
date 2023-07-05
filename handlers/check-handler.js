@@ -9,10 +9,6 @@ export const check = {
   price: async (cmd) => {
     const keyManager = new KeyManager();
 
-    if (!cmd.coin) {
-      cmd.coin = DEFAULT_COINS;
-    }
-
     let key;
     try {
       key = keyManager.getKey();
@@ -32,6 +28,10 @@ export const check = {
     } catch (error) {
       console.log(error.message.red);
       return;
+    }
+
+    if (!cmd.coin) {
+      cmd.coin = DEFAULT_COINS;
     }
 
     try {
