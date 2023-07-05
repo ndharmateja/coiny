@@ -36,7 +36,7 @@ const print2dStringsListFormatted = (tableData) => {
   // Headings
   outputString = `${outputString}|`;
   outputString += headings
-    .map((heading, i) => ` ${alignString(heading, colMaxLengths[i])} `)
+    .map((heading, i) => ` ${alignStringCenter(heading, colMaxLengths[i])} `)
     .join("|");
   outputString = `${outputString}|\n`;
 
@@ -51,7 +51,7 @@ const print2dStringsListFormatted = (tableData) => {
   for (const row of rows) {
     outputString = `${outputString}|`;
     outputString += row
-      .map((value, i) => ` ${alignString(value, colMaxLengths[i])} `)
+      .map((value, i) => ` ${alignStringLeft(value, colMaxLengths[i])} `)
       .join("|");
     outputString = `${outputString}|\n`;
   }
@@ -67,9 +67,24 @@ const print2dStringsListFormatted = (tableData) => {
   process.stdout.write(outputString);
 };
 
-const alignString = (str, len) => {
+const alignStringLeft = (str, len) => {
+  const padding = len - str.length;
+  return padString(str, 0, padding);
+};
+
+const alignStringCenter = (str, len) => {
+  const padding = len - str.length;
+  const leftPadding = Math.floor(padding / 2);
+  const rightPadding = padding - leftPadding;
+  return padString(str, leftPadding, rightPadding);
+};
+
+const padString = (str, leftPadding, rightPadding) => {
   let output = str;
-  for (let i = 0; i < len - str.length; i++) {
+  for (let i = 0; i < leftPadding; i++) {
+    output = " " + output;
+  }
+  for (let i = 0; i < rightPadding; i++) {
     output += " ";
   }
   return output;
