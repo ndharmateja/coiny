@@ -28,6 +28,19 @@ $ coiny check price
 ```
 
 ```c
+$ coiny check price --coin=BTC,POLC,DOGE,ETH
+
+*----*------*------------*
+| #  | Coin |   Price    |
+*----*------*------------*
+| 1. | BTC  | $ 30,800.2 |
+| 2. | POLC | $ 0.01147  |
+| 3. | DOGE | $ 0.06869  |
+| 4. | ETH  | $ 1,938.30 |
+*----*------*------------*
+```
+
+```c
 $ coiny check price --curr=EUR
 
 *----*------*------------*
