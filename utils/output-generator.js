@@ -1,9 +1,13 @@
 export const printCoinDataList = (coinDataList) => {
-  const stringsTable = [["#", "Coin", "Price"]].concat(
+  const stringsTable = [
+    ["#", "Coin", "Price", "24H Change %", "Market Cap"],
+  ].concat(
     coinDataList.map((coinData, i) => [
       `${i + 1}.`,
       coinData.coinCode,
       coinData.coinPrice,
+      `${coinData.changePercent24Hours}%`,
+      coinData.marketCap,
     ])
   );
   print2dStringsListFormatted(stringsTable);
