@@ -10,7 +10,7 @@ async function takeKeyInput() {
     {
       type: "input",
       name: "key",
-      message: `(${GET_KEY_URL}) `.yellow + "Enter API Key:".green,
+      message: `(${GET_KEY_URL})\n`.yellow + "Enter API Key:".green,
       validate: isRequired,
     },
   ]);
