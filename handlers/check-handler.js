@@ -30,15 +30,39 @@ export const check = {
       return;
     }
 
-    if (!cmd.coin) {
-      cmd.coin = DEFAULT_COINS;
+    // Parse options
+    let isTop;
+    let topLimit;
+    let coin;
+    if (cmd.coin && cmd.top) {
+      // Both coin and top options are not allowed
+      console.log("Cannot specify both --top and --coin options".red);
+      return;
+    } else if (cmd.coin) {
+      // If only coin is specified
+      isTop = false;
+      coin = cmd.coin;
+    } else if (cmd.top) {
+      // If only top is specified
+      isTop = true;
+      topLimit = parseInt(cmd.top);
+      if (!topLimit) {
+        console.log(`--top value not a valid integer: ${cmd.top}`.red);
+        return;
+      }
+    } else {
+      // If both are not specified, we will get top 10 coins
+      isTop = true;
+      topLimit = 10;
     }
 
     try {
       const api = new CryptoApi(key);
 
       // CoinData[]
-      const coinDataList = await api.getPriceData(cmd.coin, curr);
+      const coinDataList = isTop
+        ? await api.getTopCoinsByMarketCap(topLimit, curr)
+        : await api.getPriceData(coin, curr);
       printCoinDataList(coinDataList);
     } catch (error) {
       console.log(error.message.red);
