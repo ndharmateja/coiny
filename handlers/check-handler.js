@@ -54,7 +54,7 @@ const printCoinDataList = (coinDataList) => {
       `${i + 1}.`,
       coinData.coinCode,
       coinData.getFormattedCoinPrice(),
-      `${coinData.changePercent24Hours}%`,
+      coinData.getFormattedChangePercent(),
       coinData.getFormattedMarketCap(),
     ])
   );
