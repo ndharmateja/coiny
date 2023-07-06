@@ -53,9 +53,9 @@ const printCoinDataList = (coinDataList) => {
     coinDataList.map((coinData, i) => [
       `${i + 1}.`,
       coinData.coinCode,
-      coinData.coinPrice,
+      coinData.getFormattedCoinPrice(),
       `${coinData.changePercent24Hours}%`,
-      coinData.marketCap,
+      coinData.getFormattedMarketCap(),
     ])
   );
 
