@@ -1,28 +1,36 @@
 /**
  *
- * @param {*} priceString $ 123,45.6
+ * @param {*} priceString AED 123,45.6
  * @returns 12345.6
  */
 export const parsePrice = (priceString) => {
-  let priceNumberString = priceString.substring(2);
+  const spaceIndex = priceString.indexOf(" ");
+  let priceNumberString = priceString.substring(spaceIndex + 1);
   priceNumberString = removeCharFromString(priceNumberString, ",");
   return parseFloat(priceNumberString);
 };
 
 /**
  *
- * @param {*} priceString $ 123,45.6
- * @returns $
+ * @param {*} priceString AED 123,45.6
+ * @returns AED
  */
-export const parseCurrSymbol = (priceString) => priceString.charAt(0);
+export const parseCurrSymbol = (priceString) => {
+  const spaceIndex = priceString.indexOf(" ");
+  return priceString.substring(0, spaceIndex);
+};
 
 /**
  *
- * @param {*} marketCap $ 587.46 B
+ * @param {*} marketCap AED 587.46 B
  * @returns 587.46
  */
 export const parseMarketCap = (marketCap) => {
-  let marketCapNumberString = marketCap.substring(2, marketCap.length - 2);
+  const spaceIndex = marketCap.indexOf(" ");
+  let marketCapNumberString = marketCap.substring(
+    spaceIndex + 1,
+    marketCap.length - 2
+  );
   marketCapNumberString = removeCharFromString(marketCapNumberString, ",");
   return parseFloat(marketCapNumberString);
 };
