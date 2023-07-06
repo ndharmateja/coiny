@@ -14,7 +14,7 @@ export const parsePrice = (priceString) => {
  * @param {*} priceString $ 123,45.6
  * @returns $
  */
-export const parseCurrSymbol = (priceString) => priceString.at(0);
+export const parseCurrSymbol = (priceString) => priceString.charAt(0);
 
 /**
  *
