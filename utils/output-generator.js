@@ -30,12 +30,13 @@ const print2dStringsListFormatted = (tableData) => {
   let outputString = "";
 
   // Upper border of heading
+  const divisionPoint = "+";
   const [headings, ...rows] = tableData;
-  outputString = `${outputString}*`;
+  outputString = `${outputString}${divisionPoint}`;
   outputString += colMaxLengths
     .map((colMaxLength) => new Array(colMaxLength + 2).fill("-").join(""))
-    .join("*");
-  outputString = `${outputString}*\n`;
+    .join(divisionPoint);
+  outputString = `${outputString}${divisionPoint}\n`;
 
   // Headings
   outputString = `${outputString}|`;
@@ -45,27 +46,27 @@ const print2dStringsListFormatted = (tableData) => {
   outputString = `${outputString}|\n`;
 
   // Lower border of heading
-  outputString = `${outputString}*`;
+  outputString = `${outputString}${divisionPoint}`;
   outputString += colMaxLengths
     .map((colMaxLength) => new Array(colMaxLength + 2).fill("-").join(""))
-    .join("*");
-  outputString = `${outputString}*\n`;
+    .join(divisionPoint);
+  outputString = `${outputString}${divisionPoint}\n`;
 
   // Each row
   for (const row of rows) {
     outputString = `${outputString}|`;
     outputString += row
-      .map((value, i) => ` ${alignStringLeft(value, colMaxLengths[i])} `)
+      .map((value, i) => ` ${alignStringRight(value, colMaxLengths[i])} `)
       .join("|");
     outputString = `${outputString}|\n`;
   }
 
   // Lower border of table
-  outputString = `${outputString}*`;
+  outputString = `${outputString}${divisionPoint}`;
   outputString += colMaxLengths
     .map((colMaxLength) => new Array(colMaxLength + 2).fill("-").join(""))
-    .join("*");
-  outputString = `${outputString}*\n`;
+    .join(divisionPoint);
+  outputString = `${outputString}${divisionPoint}\n`;
 
   // Print output to console without new line
   process.stdout.write(outputString);
@@ -74,6 +75,11 @@ const print2dStringsListFormatted = (tableData) => {
 const alignStringLeft = (str, len) => {
   const padding = len - str.length;
   return padString(str, 0, padding);
+};
+
+const alignStringRight = (str, len) => {
+  const padding = len - str.length;
+  return padString(str, padding, 0);
 };
 
 const alignStringCenter = (str, len) => {
