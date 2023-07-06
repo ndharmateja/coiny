@@ -2,7 +2,7 @@
 
 ## Description
 
-- Coiny is a command line tool to get the latest prices of different cryptocurrencies in various currency options. The default currency is USD.
+- Coiny is a command line tool to get the top cryptocurrencies by market cap and latest prices of different cryptocurrencies in various currency options.
 - It uses the Crypto Compare API. Users should first get an API Key (free) from [here](https://www.cryptocompare.com/cryptopian/api-keys) and set the key using the CLI.
 - Requires Node 20 or above.
 
