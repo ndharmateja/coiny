@@ -160,61 +160,61 @@ Successfully removed the key.
 
 ## Usage
 
-1. **coiny**
+```
+$ coiny --help
 
-   ```
-   Usage: coiny [options] [command]
+Usage: coiny [options] [command]
 
-   Options:
-      -V, --version   output the version number
-      -h, --help      display help for command
+Options:
+   -V, --version   output the version number
+   -h, --help      display help for command
 
-   Commands:
-      key             Manage API key -> Get at https://www.cryptocompare.com/cryptopian/api-keys
-      check           Check cryptocurrency coins prices
-      help [command]  display help for command
-   ```
+Commands:
+   key             Manage API key -> Get at https://www.cryptocompare.com/cryptopian/api-keys
+   check           Check cryptocurrency coins prices
+   help [command]  display help for command
+```
 
-2. **coiny key**
+```
+$ coiny key --help
 
-   ```
-   Usage: coiny-key [options] [command]
+Usage: coiny-key [options] [command]
 
-   Options:
-      -h, --help      display help for command
+Options:
+   -h, --help      display help for command
 
-   Commands:
-      set             Set API Key -> Get at https://www.cryptocompare.com/cryptopian/api-keys
-      show            Show API Key
-      remove          Remove API Key
-      help [command]  display help for command
-   ```
+Commands:
+   set             Set API Key -> Get at https://www.cryptocompare.com/cryptopian/api-keys
+   show            Show API Key
+   remove          Remove API Key
+   help [command]  display help for command
+```
 
-3. **coiny check**
+```
+$ coiny check -help
 
-   ```
-   Usage: coiny-check [options] [command]
+Usage: coiny-check [options] [command]
 
-   Options:
-      -h, --help display help for command
+Options:
+   -h, --help display help for command
 
-   Commands:
-      price [options]  Check price of coins. Gets list of top 10 coins by market cap if no options are specified. Use --coin option
-                       to get prices for specific coins.
-      help [command]   display help for command
-   ```
+Commands:
+   price [options]  Check price of coins. Gets list of top 10 coins by market cap if no options are specified. Use --coin option
+                    to get prices for specific coins.
+   help [command]   display help for command
+```
 
-4. **coiny check price**
+```
+$ coiny check price --help
 
-   ```
-   Usage: coiny-check price [options]
+Usage: coiny-check price [options]
 
-   Check price of coins. Gets list of top 10 coins by market cap if no options are specified. Use --coin option to get prices for
-   specific coins.
+Check price of coins. Gets list of top 10 coins by market cap if no options are specified. Use --coin option to get prices for
+specific coins.
 
-   Options:
-      -t --top <limit>   Get top coins by market cap (default: 10)
-      --curr <currency>  Change the currency (default: "USD")
-      --coin <type>      Specific coin types comma separated
-      -h, --help         display help for command
-   ```
+Options:
+   -t --top <limit>   Get top coins by market cap (default: 10)
+   --curr <currency>  Change the currency (default: "USD")
+   --coin <type>      Specific coin types comma separated
+   -h, --help         display help for command
+```
