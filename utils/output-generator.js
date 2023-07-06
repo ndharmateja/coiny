@@ -1,22 +1,4 @@
-export const printCoinDataList = (coinDataList) => {
-  const stringsTable = [
-    ["#", "Coin", "Price", "24H Change %", "Market Cap"],
-  ].concat(
-    coinDataList.map((coinData, i) => [
-      `${i + 1}.`,
-      coinData.coinCode,
-      coinData.coinPrice,
-      `${coinData.changePercent24Hours}%`,
-      coinData.marketCap,
-    ])
-  );
-
-  // Print output to console without new line
-  const formattedString = formatStrings2dList(stringsTable);
-  process.stdout.write(formattedString);
-};
-
-const formatStrings2dList = (tableData) => {
+export const formatStrings2dList = (tableData) => {
   // Get max length of string in each column
   const numCols = tableData[0].length;
   const colMaxLengths = new Array(numCols).fill(0);
