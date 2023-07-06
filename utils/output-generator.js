@@ -10,10 +10,13 @@ export const printCoinDataList = (coinDataList) => {
       coinData.marketCap,
     ])
   );
-  print2dStringsListFormatted(stringsTable);
+
+  // Print output to console without new line
+  const formattedString = formatStrings2dList(stringsTable);
+  process.stdout.write(formattedString);
 };
 
-const print2dStringsListFormatted = (tableData) => {
+const formatStrings2dList = (tableData) => {
   // Get max length of string in each column
   const numCols = tableData[0].length;
   const colMaxLengths = new Array(numCols).fill(0);
@@ -68,8 +71,7 @@ const print2dStringsListFormatted = (tableData) => {
     .join(divisionPoint);
   outputString = `${outputString}${divisionPoint}\n`;
 
-  // Print output to console without new line
-  process.stdout.write(outputString);
+  return outputString;
 };
 
 const alignStringLeft = (str, len) => {
