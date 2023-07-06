@@ -3,7 +3,6 @@ import { CryptoApi } from "../lib/CryptoApi.js";
 import colors from "colors";
 import { validateCurrency } from "../utils/validation.js";
 import { printCoinDataList } from "../utils/output-generator.js";
-import { DEFAULT_COINS } from "../utils/constants.js";
 
 const parseOptions = (cmd) => {
   // If not valid currency, validateCurrency throws error
